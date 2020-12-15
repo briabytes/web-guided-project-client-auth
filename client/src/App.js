@@ -9,19 +9,12 @@ import axios from 'axios';
 function App() {
   const logout = () => {
     axios
-      .post("http://localhost:5000/api/logout", {
-        headers: {
-          Authorization: localStorage.getItem("token")
-        }
-      })
-      .then((res)=>{
+      .post("http://localhost:5000/api/logout", {userToken:localStorage.getItem('token')})
+      .then((res) => {
         console.log(res);
       })
-      .catch(err=>{
-        console.log(err);
-      })
+      .catch((err) => console.log(err));
   };
-
 
   return (
     <Router>
