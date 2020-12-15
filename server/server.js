@@ -36,7 +36,7 @@ app.post("/api/login", (req, res) => {
 
 app.post("/api/logout", (req, res) => {
   const { userToken } = req.body;
-  if (t === token) {
+  if (userToken === token) {
     //remove token from db
   }
   
