@@ -20,7 +20,7 @@ class Login extends React.Component {
 
   login = e => {
     e.preventDefault();
-    console.log("Clicked Login");
+    console.log(e.target);
   };
 
   render() {
