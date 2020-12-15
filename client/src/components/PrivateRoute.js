@@ -7,8 +7,12 @@ import { Route, Redirect } from "react-router-dom";
     3. It redirect to login if the user is not authenticated.
 */
 
-const PrivateRoute = (props) => {
-    return (<Route {...props}/>);
+const PrivateRoute = ({component: Component, ...rest}) => {
+    return (<Route 
+        render={
+            return();
+        }
+    />);
 }
 
 export default PrivateRoute;
