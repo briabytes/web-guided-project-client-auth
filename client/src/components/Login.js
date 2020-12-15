@@ -21,6 +21,9 @@ class Login extends React.Component {
   login = e => {
     e.preventDefault();
     console.log(this.state.credentials);
+    //1. create an axios call to our local server.
+    //2. get the result token from our call and print it out.
+    //3. print out if we have an error.
   };
 
   render() {
